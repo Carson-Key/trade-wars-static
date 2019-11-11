@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Carson-Key/trade-wars-static/static/css/main.b100e6da.chunk.css",
+    "main.js": "/Carson-Key/trade-wars-static/static/js/main.82d0a67e.chunk.js",
+    "main.js.map": "/Carson-Key/trade-wars-static/static/js/main.82d0a67e.chunk.js.map",
+    "runtime-main.js": "/Carson-Key/trade-wars-static/static/js/runtime-main.ada557ef.js",
+    "runtime-main.js.map": "/Carson-Key/trade-wars-static/static/js/runtime-main.ada557ef.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/Carson-Key/trade-wars-static/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.e8df4a57.chunk.js": "/Carson-Key/trade-wars-static/static/js/2.e8df4a57.chunk.js",
+    "static/js/2.e8df4a57.chunk.js.map": "/Carson-Key/trade-wars-static/static/js/2.e8df4a57.chunk.js.map",
+    "index.html": "/Carson-Key/trade-wars-static/index.html",
+    "precache-manifest.02de6646aaf1cb7c2b9f53e8a31dbf70.js": "/Carson-Key/trade-wars-static/precache-manifest.02de6646aaf1cb7c2b9f53e8a31dbf70.js",
+    "service-worker.js": "/Carson-Key/trade-wars-static/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/Carson-Key/trade-wars-static/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.b100e6da.chunk.css.map": "/Carson-Key/trade-wars-static/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/Carson-Key/trade-wars-static/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ada557ef.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.e8df4a57.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.82d0a67e.chunk.js"
+  ]
+}
