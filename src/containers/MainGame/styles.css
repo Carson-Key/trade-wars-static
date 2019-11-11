@@ -7,9 +7,25 @@
 
 .game-window-container {
   display: flex;
+  position: absolute;
   flex-direction: row;
   width: 100%;
+  bottom: 8px;
+  top: 48px;
   margin: 0px;
-  padding: 0px;
+  padding-left: 8px;
   flex-basis: 70%;
+  color: white;
+}
+
+.render-container {
+  border: 1px #d26e16 solid;
+  width: 70%;
+  height: 100%;
+}
+
+.game-title {
+  color: #d26e16;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 8px;
 }

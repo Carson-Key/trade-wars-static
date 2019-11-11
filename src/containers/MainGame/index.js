@@ -5,9 +5,11 @@ class GetName extends Component {
   render() {
     return (
       <div class="game-background">
-        <h1>Main Game</h1>
+        <h1 class="game-title">Trade Wars</h1>
         <div class="game-window-container">
-          <p>Test</p>
+          <div class="render-container">
+            <p>Game goes here</p>
+          </div>
           <p>Test 2</p>
         </div>
       </div>
