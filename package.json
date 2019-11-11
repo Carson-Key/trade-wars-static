@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "https://carson-key.github.io/trade-wars-static/",
   "dependencies": {
+    "@inlet/react-pixi": "^1.1.9",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
+    "pixi.js": "^5.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.3",
