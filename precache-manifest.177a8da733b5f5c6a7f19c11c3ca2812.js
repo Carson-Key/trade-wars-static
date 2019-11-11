@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4152cb482be748be8b8ffe23e3f99435",
+    "revision": "d3728e1383221ab1a649fbac82bd56c2",
     "url": "/trade-wars-static/index.html"
   },
   {
-    "revision": "ac51bc05a06a6604f773",
+    "revision": "a9a29412c9b7578c4474",
     "url": "/trade-wars-static/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "7b35330f18e8e9b42a19",
-    "url": "/trade-wars-static/static/css/main.b100e6da.chunk.css"
+    "revision": "835878ba4b4ab6b7a74d",
+    "url": "/trade-wars-static/static/css/main.ddc95bae.chunk.css"
   },
   {
-    "revision": "ac51bc05a06a6604f773",
-    "url": "/trade-wars-static/static/js/2.e8df4a57.chunk.js"
+    "revision": "a9a29412c9b7578c4474",
+    "url": "/trade-wars-static/static/js/2.97c35d97.chunk.js"
   },
   {
-    "revision": "7b35330f18e8e9b42a19",
-    "url": "/trade-wars-static/static/js/main.ffbca76f.chunk.js"
+    "revision": "835878ba4b4ab6b7a74d",
+    "url": "/trade-wars-static/static/js/main.16af598d.chunk.js"
   },
   {
     "revision": "8ed95a57fbeec626e1f9",
