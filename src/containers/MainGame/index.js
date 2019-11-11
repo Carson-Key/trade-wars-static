@@ -10,7 +10,14 @@ class GetName extends Component {
           <div class="render-container">
             <p>Game goes here</p>
           </div>
-          <p>Test 2</p>
+          <div class="game-status-container">
+            <div class="game-cargo-container">
+              <p class="game-status-title">Cargo</p>
+            </div>
+            <div class="game-status-text-container">
+              <p class="game-status-title">Messages</p>
+            </div>
+          </div>
         </div>
       </div>
     );
