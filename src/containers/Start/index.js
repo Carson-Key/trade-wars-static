@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 import RouteHandle from './RouteHandle'
-import GetName from './GetName'
+import ROUTES from '../routes.js'
 
 class Start extends Component {
   render() {
     return (
       <Router>
-        <GetName/>
-        <RouteHandle/>
+        <RouteHandle routes={ROUTES}/>
       </Router>
     )
   }
