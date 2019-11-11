@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "./styles.css";
 
 class GetName extends Component {
   render() {
     return (
-      <p>MainGame</p>
-    )
+      <div class="game-background">
+        <h1>Main Game</h1>
+      </div>
+    );
   }
 }
 
