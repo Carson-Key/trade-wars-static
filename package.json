@@ -2,7 +2,7 @@
   "name": "trade-wars-static",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Carson-Key/trade-wars-static",
+  "homepage": "https://carson-key.github.io/trade-wars-static/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
