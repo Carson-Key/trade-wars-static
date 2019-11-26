@@ -4,8 +4,8 @@ import "./styles.css";
 class GetName extends Component {
   render() {
     return (
-      <div class="get-name-background">
-        <div class="username-card">
+      <div className="get-name-background">
+        <div className="username-card">
           <h1>Trade Wars!</h1>
           <InputGroup>
             <Input placeholder="Username" />
