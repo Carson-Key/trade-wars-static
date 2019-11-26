@@ -30,20 +30,19 @@ class GetName extends Component {
   }
   setPlayerName() {
     if (this.tempPlayerName !== "") {
+      fetch('https://trade-wars-backend.herokuapp.com/startSession/', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          callsign: this.tempPlayerName
+        })
+      })
       this.setState({playerName: this.tempPlayerName}, () => {
         const playerName = this.tempPlayerName
         this.props.addPlayername(playerName)
-      }, () => {
-        fetch('https://trade-wars-backend.herokuapp.com/startSession/', {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            callsign: this.state.playerName
-          })
-        })
       })
     }
   }
