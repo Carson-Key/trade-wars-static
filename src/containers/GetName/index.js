@@ -3,6 +3,7 @@ import { InputGroup, InputGroupAddon, Button, Input } from "reactstrap";
 import "./styles.css";
 import { connect } from "react-redux";
 import { addPlayername } from "../../js/actions/index";
+import { Redirect } from 'react-router-dom'
 
 function mapDispatch(dispatch) {
   return {
@@ -21,6 +22,7 @@ class GetName extends Component {
 
         this.setPlayerName = this.setPlayerName.bind(this)
         this.changeTempPlayerName = this.changeTempPlayerName.bind(this)
+        this.readyForRedirect = this.readyForRedirect.bind(this)
   }
 
   changeTempPlayerName(event) {
@@ -34,10 +36,16 @@ class GetName extends Component {
       })
     }
   }
+  readyForRedirect() {
+    if (this.state.playerName !== -1) {
+      return <Redirect to="/game" />
+    }
+  }
 
   render() {
     return (
       <div className="get-name-background">
+        {this.readyForRedirect()}
         <div className="username-card">
           <h1>Trade Wars!</h1>
           <InputGroup>
