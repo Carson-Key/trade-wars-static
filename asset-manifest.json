@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/trade-wars-static/static/css/main.94460baa.chunk.css",
-    "main.js": "/trade-wars-static/static/js/main.d66b7b40.chunk.js",
-    "main.js.map": "/trade-wars-static/static/js/main.d66b7b40.chunk.js.map",
+    "main.css": "/trade-wars-static/static/css/main.7069e633.chunk.css",
+    "main.js": "/trade-wars-static/static/js/main.1e20368e.chunk.js",
+    "main.js.map": "/trade-wars-static/static/js/main.1e20368e.chunk.js.map",
     "runtime-main.js": "/trade-wars-static/static/js/runtime-main.d3d68866.js",
     "runtime-main.js.map": "/trade-wars-static/static/js/runtime-main.d3d68866.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/trade-wars-static/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.2a0332e6.chunk.js": "/trade-wars-static/static/js/2.2a0332e6.chunk.js",
-    "static/js/2.2a0332e6.chunk.js.map": "/trade-wars-static/static/js/2.2a0332e6.chunk.js.map",
+    "static/js/2.2592f661.chunk.js": "/trade-wars-static/static/js/2.2592f661.chunk.js",
+    "static/js/2.2592f661.chunk.js.map": "/trade-wars-static/static/js/2.2592f661.chunk.js.map",
     "index.html": "/trade-wars-static/index.html",
-    "precache-manifest.1047eb33c3f9291a2acae5708b5b16b6.js": "/trade-wars-static/precache-manifest.1047eb33c3f9291a2acae5708b5b16b6.js",
+    "precache-manifest.209e9ca3a0de6fdc07b43034454fe54a.js": "/trade-wars-static/precache-manifest.209e9ca3a0de6fdc07b43034454fe54a.js",
     "service-worker.js": "/trade-wars-static/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/trade-wars-static/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.94460baa.chunk.css.map": "/trade-wars-static/static/css/main.94460baa.chunk.css.map",
-    "static/media/logo.svg": "/trade-wars-static/static/media/logo.25bf045c.svg"
+    "static/css/main.7069e633.chunk.css.map": "/trade-wars-static/static/css/main.7069e633.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.d3d68866.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.2a0332e6.chunk.js",
-    "static/css/main.94460baa.chunk.css",
-    "static/js/main.d66b7b40.chunk.js"
+    "static/js/2.2592f661.chunk.js",
+    "static/css/main.7069e633.chunk.css",
+    "static/js/main.1e20368e.chunk.js"
   ]
 }
