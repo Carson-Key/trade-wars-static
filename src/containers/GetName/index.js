@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import { InputGroup, InputGroupAddon, Button, Input } from "reactstrap";
 import "./styles.css";
+import { connect } from "react-redux";
+import { addPlayername } from "../../js/actions/index";
+
+function mapDispatch(dispatch) {
+  return {
+    addPlayername: playerName => dispatch(addPlayername(playerName))
+  };
+}
+
 class GetName extends Component {
   constructor(props) {
         super(props);
@@ -18,8 +27,11 @@ class GetName extends Component {
     this.tempPlayerName = event.target.value
   }
   setPlayerName() {
-    if (this.tempPlayerName != "") {
-      this.setState({playerName: this.tempPlayerName})
+    if (this.tempPlayerName !== "") {
+      this.setState({playerName: this.tempPlayerName}, () => {
+        const playerName = this.tempPlayerName
+        this.props.addPlayername(playerName)
+      })
     }
   }
 
@@ -40,4 +52,6 @@ class GetName extends Component {
   }
 }
 
-export default GetName;
+
+
+export default connect(null, mapDispatch)(GetName)
