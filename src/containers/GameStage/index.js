@@ -24,7 +24,7 @@ class GameStage extends Component {
   render() {
     return (
       <Stage width={this.state.gameWidth} height={this.state.gameHeight} options={{ backgroundColor: 0x1d2230 }}>
-        <Planet x={100} y={100} radius={50} fill={0xff0000} />
+        <Planet x={10} y={10} radius={5} fill={0xff0000} />
       </Stage>
     );
   }
