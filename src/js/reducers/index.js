@@ -1,7 +1,7 @@
 import { ADD_PLAYERNAME } from '../constants/action-types'
 
 const initialState = {
-  playerName: ""
+  playerName: -1
 }
 
 function rootReducer(state = initialState, action) {

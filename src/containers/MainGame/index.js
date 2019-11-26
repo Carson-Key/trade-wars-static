@@ -1,11 +1,30 @@
 import React, { Component } from "react";
 import "./styles.css";
+import { connect } from "react-redux";
+import { Redirect } from 'react-router-dom'
 
-class GetName extends Component {
+const mapStateToProps = state => {
+  return { playerName: state.playerName };
+}
+
+class MainGame extends Component {
+  constructor(props) {
+        super(props);
+
+        this.isPlayernameSet = this.isPlayernameSet.bind(this)
+  }
+
+  isPlayernameSet() {
+    if (this.props.playerName === -1) {
+      return <Redirect to="/" />
+    }
+  }
+
   render() {
     return (
       <div className="game-background">
-        <h1 className="game-title">Trade Wars</h1>
+        {this.isPlayernameSet()}
+        <h1 className="game-title">Trade Wars: {this.props.playerName}</h1>
         <div className="game-window-container">
           <div className="render-container">
             <p>Game goes here</p>
@@ -24,4 +43,5 @@ class GetName extends Component {
   }
 }
 
-export default GetName;
+MainGame = connect(mapStateToProps)(MainGame)
+export default MainGame
