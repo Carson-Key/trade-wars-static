@@ -30,7 +30,7 @@ class GetName extends Component {
   }
   setPlayerName() {
     if (this.tempPlayerName !== "") {
-      fetch('https://trade-wars-backend.herokuapp.com/startSession/', {
+      fetch('https://trade-wars-backend.herokuapp.com/startSession', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
