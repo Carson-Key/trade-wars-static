@@ -4,18 +4,18 @@ import "./styles.css";
 class GetName extends Component {
   render() {
     return (
-      <div class="game-background">
-        <h1 class="game-title">Trade Wars</h1>
-        <div class="game-window-container">
-          <div class="render-container">
+      <div className="game-background">
+        <h1 className="game-title">Trade Wars</h1>
+        <div className="game-window-container">
+          <div className="render-container">
             <p>Game goes here</p>
           </div>
-          <div class="game-status-container">
-            <div class="game-cargo-container">
-              <p class="game-status-title">Cargo</p>
+          <div className="game-status-container">
+            <div className="game-cargo-container">
+              <p className="game-status-title">Cargo</p>
             </div>
-            <div class="game-status-text-container">
-              <p class="game-status-title">Messages</p>
+            <div className="game-status-text-container">
+              <p className="game-status-title">Messages</p>
             </div>
           </div>
         </div>
