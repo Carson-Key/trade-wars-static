@@ -1,7 +1,7 @@
 import { Graphics, Stage } from '@inlet/react-pixi';
 import React, { Component } from "react";
 import Player from '../Player'
-import Planet from '../Planet'
+import SpaceStation from '../SpaceStation'
 
 class Grid extends Component {
   constructor(props) {
@@ -29,7 +29,6 @@ class Grid extends Component {
   updatePlayerLocation(event) {
     var clickCords = event.data.global
     this.setState({playerLocation: clickCords})
-    console.log(clickCords)
   }
 
   render() {
@@ -46,8 +45,8 @@ class Grid extends Component {
             g.endFill();
           }}
         />
-        <Planet x={10} y={10} radius={5} fill={0xff0000} />
-        <Player x={this.state.playerLocation.x} y={this.state.playerLocation.y} radius={5} fill={0xff0000} />
+        <SpaceStation x={100} y={100} />
+        <Player x={this.state.playerLocation.x} y={this.state.playerLocation.y} />
       </Stage>
     );
   }

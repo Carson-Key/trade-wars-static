@@ -4,7 +4,12 @@ import React, { Component } from "react";
 class Player extends Component {
   render() {
     return (
-      <Sprite image="./ship.png" x={this.props.x} y={this.props.y} />
+      <Sprite
+        image="https://cdn1.iconfinder.com/data/icons/space-133/64/spaceship-planet-space-colony-city-512.png"
+        x={this.props.x}
+        y={this.props.y}
+        scale={{ x: 0.05, y: 0.05}}
+      />
     );
   }
 }
