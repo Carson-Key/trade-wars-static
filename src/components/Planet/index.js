@@ -10,6 +10,7 @@ const Planet = PixiComponent('Circle', {
     instance.beginFill(fill);
     instance.drawCircle(x, y, radius);
     instance.endFill();
+
   },
 });
 
