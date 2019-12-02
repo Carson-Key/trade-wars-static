@@ -4,6 +4,7 @@ import "./styles.css";
 import { connect } from "react-redux";
 import { addPlayername } from "../../js/actions/index";
 import { Redirect } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 function mapDispatch(dispatch) {
   return {
@@ -23,6 +24,7 @@ class GetName extends Component {
         this.setPlayerName = this.setPlayerName.bind(this)
         this.changeTempPlayerName = this.changeTempPlayerName.bind(this)
         this.readyForRedirect = this.readyForRedirect.bind(this)
+        this.findCookieCallSign = this.findCookieCallSign.bind(this)
   }
 
   changeTempPlayerName(event) {
@@ -30,23 +32,22 @@ class GetName extends Component {
   }
   setPlayerName() {
     if (this.tempPlayerName !== "") {
-      fetch('https://trade-wars-backend.herokuapp.com/startSession', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          callsign: this.tempPlayerName
-        })
-      })
       this.setState({playerName: this.tempPlayerName}, () => {
         const playerName = this.tempPlayerName
+        Cookies.set('callsign', playerName, { expires: 5 })
         this.props.addPlayername(playerName)
       })
     }
   }
+  findCookieCallSign() {
+    if (Cookies.get('callsign') !== undefined) {
+      this.setState({playerName: this.tempPlayerName}, () => {
+        const playerName = Cookies.get('callsign')
+        this.props.addPlayername(playerName)
+      })
+    }
+  }
+
   readyForRedirect() {
     if (this.state.playerName !== -1) {
       return <Redirect to="/game" />
@@ -56,6 +57,7 @@ class GetName extends Component {
   render() {
     return (
       <div className="get-name-background">
+        {this.findCookieCallSign()}
         {this.readyForRedirect()}
         <div className="username-card">
           <h1>Trade Wars!</h1>
