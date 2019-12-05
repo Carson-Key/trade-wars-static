@@ -56,9 +56,10 @@ class Grid extends Component {
     this.props.webSocket.onmessage = (event) => {
       var data = JSON.parse(event.data)
       if (data.EventType === "positionUpdate" && data.Target !== Cookies.get('callsign')) {
-        this.setState({players: {
-          [data.Target]: data.EventParams
-        }})
+        var mergedPlayers = {...this.state.players, [data.Target]: data.EventParams}
+        this.setState({
+          players: mergedPlayers
+        })
       }
     }
     this.setState({
@@ -198,6 +199,7 @@ class Grid extends Component {
 
   drawPlayers() {
     const players = Object.keys(this.state.players);
+    console.log(this.state.players)
     return players.map((player, i) => {
       try {
         var gridCords = this.convertCordsToGrid(this.state.players[player].x, this.state.players[player].y)
