@@ -2,7 +2,7 @@ import { ADD_PLAYERNAME, ADD_WEBSOCKET } from '../constants/action-types'
 
 const initialState = {
   playerName: -1,
-  webSocket: new WebSocket('ws://trade-wars-backend.herokuapp.com/gameServer')
+  webSocket: new WebSocket('wss://trade-wars-backend.herokuapp.com/gameServer')
 }
 
 function rootReducer(state = initialState, action) {

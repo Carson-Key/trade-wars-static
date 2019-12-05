@@ -25,10 +25,6 @@ class GetName extends Component {
           socket: this.props.webSocket
         }
 
-        // this.setState({}, () => {
-        //   this.props.addWebSocket(this.state.socket)
-        // })
-
         this.tempPlayerName = ""
 
         this.setPlayerName = this.setPlayerName.bind(this)
