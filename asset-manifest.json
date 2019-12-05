@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/trade-wars-static/static/css/main.7069e633.chunk.css",
-    "main.js": "/trade-wars-static/static/js/main.32eee2f7.chunk.js",
-    "main.js.map": "/trade-wars-static/static/js/main.32eee2f7.chunk.js.map",
+    "main.js": "/trade-wars-static/static/js/main.bb6a9c84.chunk.js",
+    "main.js.map": "/trade-wars-static/static/js/main.bb6a9c84.chunk.js.map",
     "runtime-main.js": "/trade-wars-static/static/js/runtime-main.d3d68866.js",
     "runtime-main.js.map": "/trade-wars-static/static/js/runtime-main.d3d68866.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/trade-wars-static/static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.7acecabb.chunk.js": "/trade-wars-static/static/js/2.7acecabb.chunk.js",
     "static/js/2.7acecabb.chunk.js.map": "/trade-wars-static/static/js/2.7acecabb.chunk.js.map",
     "index.html": "/trade-wars-static/index.html",
-    "precache-manifest.0aec50ef4b18eb428463f9bc07303fdd.js": "/trade-wars-static/precache-manifest.0aec50ef4b18eb428463f9bc07303fdd.js",
+    "precache-manifest.0f270dd57744fbccc1dc49f47dc91c0e.js": "/trade-wars-static/precache-manifest.0f270dd57744fbccc1dc49f47dc91c0e.js",
     "service-worker.js": "/trade-wars-static/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/trade-wars-static/static/css/2.b0bb7f2c.chunk.css.map",
     "static/css/main.7069e633.chunk.css.map": "/trade-wars-static/static/css/main.7069e633.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.7acecabb.chunk.js",
     "static/css/main.7069e633.chunk.css",
-    "static/js/main.32eee2f7.chunk.js"
+    "static/js/main.bb6a9c84.chunk.js"
   ]
 }
