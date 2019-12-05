@@ -199,7 +199,6 @@ class Grid extends Component {
 
   drawPlayers() {
     const players = Object.keys(this.state.players);
-    console.log(this.state.players)
     return players.map((player, i) => {
       try {
         var gridCords = this.convertCordsToGrid(this.state.players[player].x, this.state.players[player].y)
