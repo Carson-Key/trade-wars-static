@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/trade-wars-static/precache-manifest.43eeff0d15ff56eb1a37b41ce2f63e3e.js"
+  "/trade-wars-static/precache-manifest.0aec50ef4b18eb428463f9bc07303fdd.js"
 );
 
 self.addEventListener('message', (event) => {
