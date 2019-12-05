@@ -41,7 +41,7 @@ class GetName extends Component {
             command: "ping"
           })
         )
-      }, 30000)
+      }, 10000)
     }
     this.state.socket.onmessage = (event) => {
       console.log(event)
@@ -68,13 +68,17 @@ class GetName extends Component {
         this.state.socket.onopen = () => {
           this.state.socket.send(
             JSON.stringify({
-              EventType: "callsignChange",
-              Target: playerName,
-              EventParams: {
-                old: "NULL"
-              }
+              command: "setCallsign",
+              callsign: playerName
             })
           )
+          setInterval(() => {
+            this.state.socket.send(
+              JSON.stringify({
+                command: "ping"
+              })
+            )
+          }, 10000)
         }
       })
     }
