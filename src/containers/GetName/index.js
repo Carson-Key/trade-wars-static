@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { InputGroup, InputGroupAddon, Button, Input } from "reactstrap";
 import "./styles.css";
 import { connect } from "react-redux";
-import { addPlayername } from "../../js/actions/index";
+import { addPlayername, addWebSocket } from "../../js/actions/index";
 import { Redirect } from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 function mapDispatch(dispatch) {
   return {
-    addPlayername: playerName => dispatch(addPlayername(playerName))
+    addPlayername: playerName => dispatch(addPlayername(playerName)),
+    addWebSocket: webSocket => dispatch(addWebSocket(webSocket))
   };
 }
 
@@ -16,8 +17,13 @@ class GetName extends Component {
   constructor(props) {
         super(props);
         this.state = {
-          playerName: -1
+          playerName: -1,
+          socket: new WebSocket('ws://trade-wars-backend.herokuapp.com/gameServer')
         }
+
+        this.setState({}, () => {
+          this.props.addWebSocket(this.state.socket)
+        })
 
         this.tempPlayerName = ""
 
@@ -25,6 +31,21 @@ class GetName extends Component {
         this.changeTempPlayerName = this.changeTempPlayerName.bind(this)
         this.readyForRedirect = this.readyForRedirect.bind(this)
         this.findCookieCallSign = this.findCookieCallSign.bind(this)
+  }
+
+  componentDidMount() {
+    this.state.socket.onopen = () => {
+      setInterval(() => {
+        this.state.socket.send(
+          JSON.stringify({
+            command: "ping"
+          })
+        )
+      }, 30000)
+    }
+    this.state.socket.onmessage = (event) => {
+      console.log(event)
+    }
   }
 
   changeTempPlayerName(event) {

@@ -1,7 +1,8 @@
-import { ADD_PLAYERNAME } from '../constants/action-types'
+import { ADD_PLAYERNAME, ADD_WEBSOCKET } from '../constants/action-types'
 
 const initialState = {
-  playerName: -1
+  playerName: -1,
+  webSocket: -1
 }
 
 function rootReducer(state = initialState, action) {
@@ -9,6 +10,10 @@ function rootReducer(state = initialState, action) {
     case ADD_PLAYERNAME:
       return Object.assign({}, state, {
         playerName: state.playerName = action.payload
+      })
+    case ADD_WEBSOCKET:
+      return Object.assign({}, state, {
+        webSocket: state.webSocket = action.payload
       })
     default:
       break

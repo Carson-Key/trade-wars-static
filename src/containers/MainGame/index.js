@@ -8,8 +8,6 @@ const mapStateToProps = state => {
   return { playerName: state.playerName };
 }
 
-const socket = new WebSocket('ws://trade-wars-backend.herokuapp.com/gameServer')
-
 class MainGame extends Component {
   constructor(props) {
         super(props);
@@ -36,18 +34,6 @@ class MainGame extends Component {
       gameWidth: this.GameDiv.current.offsetWidth,
       gameHeight: this.GameDiv.current.offsetHeight
     })
-    socket.onopen = () => {
-      setInterval(() => {
-        socket.send(
-          JSON.stringify({
-            command: "ping"
-          })
-        )
-      }, 30000)
-    }
-    socket.onmessage = (event) => {
-      console.log(event)
-    }
 
   }
 
