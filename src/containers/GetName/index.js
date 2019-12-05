@@ -66,7 +66,6 @@ class GetName extends Component {
         const playerName = Cookies.get('callsign')
         this.props.addPlayername(playerName)
         this.state.socket.onopen = () => {
-          console.log("Test")
           this.state.socket.send(
             JSON.stringify({
               EventType: "callsignChange",
