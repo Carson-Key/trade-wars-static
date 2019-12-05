@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd224147b5000ad5a9cfe59d2de8a1a6",
+    "revision": "415216339820c5068308d58846ac664f",
     "url": "/trade-wars-static/index.html"
   },
   {
-    "revision": "8f8baa2ab315b965e2aa",
+    "revision": "dd5c8a0b5e4c095a3037",
     "url": "/trade-wars-static/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "b91042e5101fde7ec152",
+    "revision": "b301e4ba10743ab7de52",
     "url": "/trade-wars-static/static/css/main.7069e633.chunk.css"
   },
   {
-    "revision": "8f8baa2ab315b965e2aa",
-    "url": "/trade-wars-static/static/js/2.2552b7c2.chunk.js"
+    "revision": "dd5c8a0b5e4c095a3037",
+    "url": "/trade-wars-static/static/js/2.d0c419d1.chunk.js"
   },
   {
-    "revision": "b91042e5101fde7ec152",
-    "url": "/trade-wars-static/static/js/main.ec67ae36.chunk.js"
+    "revision": "b301e4ba10743ab7de52",
+    "url": "/trade-wars-static/static/js/main.8f277d54.chunk.js"
   },
   {
     "revision": "8ed95a57fbeec626e1f9",
