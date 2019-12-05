@@ -13,17 +13,21 @@ function mapDispatch(dispatch) {
   };
 }
 
+const mapStateToProps = state => {
+  return { webSocket: state.webSocket };
+}
+
 class GetName extends Component {
   constructor(props) {
         super(props);
         this.state = {
           playerName: -1,
-          socket: new WebSocket('ws://trade-wars-backend.herokuapp.com/gameServer')
+          socket: this.props.webSocket
         }
 
-        this.setState({}, () => {
-          this.props.addWebSocket(this.state.socket)
-        })
+        // this.setState({}, () => {
+        //   this.props.addWebSocket(this.state.socket)
+        // })
 
         this.tempPlayerName = ""
 
@@ -65,6 +69,15 @@ class GetName extends Component {
       this.setState({playerName: this.tempPlayerName}, () => {
         const playerName = Cookies.get('callsign')
         this.props.addPlayername(playerName)
+        this.state.socket.onopen = () => {
+          console.log("Test")
+          this.state.socket.send(
+            JSON.stringify({
+              command: "setCallsign",
+              callsign: playerName
+            })
+          )
+        }
       })
     }
   }
@@ -96,4 +109,4 @@ class GetName extends Component {
 
 
 
-export default connect(null, mapDispatch)(GetName)
+export default connect(mapStateToProps, mapDispatch)(GetName)
