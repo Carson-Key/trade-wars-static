@@ -98,7 +98,6 @@ class Grid extends Component {
             x={0}
             y={0}
           />
-          <SpaceStation x={100} y={100} />
           <Player x={this.state.playerLocation.x} y={this.state.playerLocation.y} />
         </Stage>
       </div>
