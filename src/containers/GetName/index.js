@@ -69,8 +69,11 @@ class GetName extends Component {
           console.log("Test")
           this.state.socket.send(
             JSON.stringify({
-              command: "setCallsign",
-              callsign: playerName
+              EventType: "callsignChange",
+              Target: playerName,
+              EventParams: {
+                old: "NULL"
+              }
             })
           )
         }
